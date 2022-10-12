@@ -18,7 +18,10 @@
         };
         pname = "velocypack";
         version = "git";
-        src = ./.;
+        src = pkgs.fetchgit {
+          url = "https://github.com/arangodb/velocypack.git";
+          sha256 = "sha256-NRBOFgcag9R7RTkBUHDqKjsNghUyk/Oq3XVMROsWry4=";
+        };
         nativeBuildInputs = [
           clang
           cmake
