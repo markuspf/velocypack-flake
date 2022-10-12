@@ -21,6 +21,7 @@
         src = pkgs.fetchgit {
           url = "https://github.com/arangodb/velocypack.git";
           sha256 = "sha256-NRBOFgcag9R7RTkBUHDqKjsNghUyk/Oq3XVMROsWry4=";
+          rev = "772095d3cde89bb00c93e5a06a74ed3b261ad610";
         };
         nativeBuildInputs = [
           clang
