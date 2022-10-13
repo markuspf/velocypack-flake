@@ -37,6 +37,7 @@
         buildInputs = [ velocypack ];
       };
       packages.default = velocypack;
+      hydraJobs.build = velocypack;
     }
   );
 }
